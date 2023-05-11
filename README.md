@@ -3,6 +3,20 @@
 A library for generating random color sets consisting of a background color and a visible text color based on that
 background color.
 
+## Table Of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+    - [CommonJS](#commonjs)
+    - [ESM](#esm)
+- [API](#api)
+    - [`generateRandomColorSet()`](#generaterandomcolorset-colorset)
+    - [`generateColorSet(backgroundColor: string)`](#generatecolorsetbackgroundcolor-string-colorset)
+    - [`getRandomColor()`](#getrandomcolor-string)
+    - [`extractRGB(colorCode: string)`](#extractrgbcolorcode-string--rgbcolor)
+    - [`calculateLuminance(r: number, g: number, b: number)`](#calculateluminancer-number-g-number-b-number--number)
+- [License](#license)
+
 ## Installation
 
 ```bash
@@ -14,7 +28,7 @@ npm install random-color-set
 ### CommonJS
 
 ```javascript
-const { generateRandomColorSet } = require('random-color-set')
+const {generateRandomColorSet} = require('random-color-set')
 
 const colorSet = generateRandomColorSet()
 console.log(colorSet)
@@ -24,7 +38,7 @@ console.log(colorSet)
 ### ESM
 
 ```javascript
-import { generateRandomColorSet } from 'random-color-set'
+import {generateRandomColorSet} from 'random-color-set'
 
 const colorSet = generateRandomColorSet()
 console.log(colorSet)
@@ -90,3 +104,4 @@ Calculates the luminance of an RGB color.
 ## License
 
 MIT
+
